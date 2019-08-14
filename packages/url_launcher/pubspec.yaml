@@ -9,11 +9,14 @@ flutter:
   plugin:
     androidPackage: io.flutter.plugins.urllauncher
     iosPrefix: FLT
+    webFilename: url_launcher_web.dart
     pluginClass: UrlLauncherPlugin
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_shell:
+    path: /usr/local/google/home/het/Projects/engine/src/flutter/flutter_web_shell
 
 dev_dependencies:
   flutter_test:
