@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:html' as html;
 
 import 'package:flutter/services.dart';
-import 'package:flutter_web_shell/flutter_web_shell.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 class UrlLauncherPlugin {
   static void registerWith(Registrar registrar) {

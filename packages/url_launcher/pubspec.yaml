@@ -7,16 +7,21 @@ version: 5.1.2
 
 flutter:
   plugin:
-    androidPackage: io.flutter.plugins.urllauncher
-    iosPrefix: FLT
-    webFilename: url_launcher_web.dart
-    pluginClass: UrlLauncherPlugin
+    platforms:
+      android:
+        package: io.flutter.plugins.urllauncher
+        pluginClass: UrlLauncherPlugin
+      ios:
+        pluginClass: UrlLauncherPlugin
+      web:
+        pluginClass: UrlLauncherPlugin
+        fileName: url_launcher_web.dart
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_web_shell:
-    path: /usr/local/google/home/het/Projects/engine/src/flutter/flutter_web_shell
+  flutter_web_plugins:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
